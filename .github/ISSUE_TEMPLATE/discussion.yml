@@ -1,0 +1,60 @@
+name: Discussion
+description: Start an exploratory discussion about WEKAOU
+title: "[Discussion] "
+labels: ["type: discussion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Exploratory Discussion
+        
+        Use this for:
+        - Brainstorming ideas before a formal RFC
+        - Asking "what if" questions
+        - Exploring potential directions
+        
+        **Not ready to propose a specific change yet? That's perfect for this template!**
+        
+  - type: textarea
+    id: topic
+    attributes:
+      label: Topic
+      description: What would you like to discuss?
+      placeholder: "I've been thinking about..."
+    validations:
+      required: true
+      
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Why is this topic interesting or relevant?
+      placeholder: |
+        Background:
+        Current situation:
+    validations:
+      required: true
+      
+  - type: textarea
+    id: questions
+    attributes:
+      label: Questions for the Community
+      description: What would you like feedback on?
+      placeholder: |
+        1. Should we consider X?
+        2. How do other systems handle Y?
+        3. What are the trade-offs of Z?
+    validations:
+      required: true
+      
+  - type: textarea
+    id: initial-thoughts
+    attributes:
+      label: Initial Thoughts
+      description: Share any preliminary ideas (optional)
+      placeholder: |
+        Some possibilities:
+        - Approach A: ...
+        - Approach B: ...
+    validations:
+      required: false

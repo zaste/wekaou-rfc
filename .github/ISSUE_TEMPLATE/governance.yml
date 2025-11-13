@@ -1,0 +1,133 @@
+name: Governance Amendment
+description: Propose changes to governance structures or processes
+title: "[Governance] "
+labels: ["status: proposed", "type: governance"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Governance Amendment
+        
+        Use this template for:
+        - Changes to the Charter
+        - TSC mandate modifications
+        - Working Group proposals
+        - Membership criteria changes
+        - Voting procedure updates
+        
+        **Note**: Governance changes may require supermajority or unanimous approval.
+        
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: One-paragraph overview of the proposed governance change
+      placeholder: "This proposal seeks to..."
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: governance-area
+    attributes:
+      label: Governance Area
+      description: Which governance document does this affect?
+      options:
+        - Charter (Constitution)
+        - ACA Statutes
+        - TSC Mandate
+        - Working Group Charter
+        - Code of Conduct
+        - Other
+    validations:
+      required: true
+      
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current State
+      description: What is the current governance rule or structure?
+      placeholder: |
+        Currently, the Charter states:
+        > [quote current text]
+    validations:
+      required: true
+      
+  - type: textarea
+    id: proposed-change
+    attributes:
+      label: Proposed Change
+      description: Exact wording of the proposed amendment
+      placeholder: |
+        Replace:
+        > [old text]
+        
+        With:
+        > [new text]
+    validations:
+      required: true
+      
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this governance change needed?
+      placeholder: |
+        Motivation:
+        Expected benefits:
+        Risks addressed:
+    validations:
+      required: true
+      
+  - type: dropdown
+    id: approval-level
+    attributes:
+      label: Required Approval Level
+      description: Based on Charter, what approval is needed?
+      options:
+        - Simple Majority (50% + 1 of TSC)
+        - Supermajority (2/3 of TSC)
+        - Unanimous (All TSC + Steering Committee)
+        - Membership Vote (Simple majority of members)
+        - Uncertain
+    validations:
+      required: true
+      
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact Assessment
+      description: Who/what is affected by this change?
+      placeholder: |
+        Affected parties:
+        - TSC:
+        - Members:
+        - Contributors:
+    validations:
+      required: true
+      
+  - type: textarea
+    id: transition
+    attributes:
+      label: Transition Plan
+      description: If approved, how will this be implemented?
+      placeholder: |
+        Implementation steps:
+        1. 
+        2. 
+        
+        Timeline:
+        Effective date:
+    validations:
+      required: true
+      
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Proposal Checklist
+      options:
+        - label: I have reviewed the current governance documents
+          required: true
+        - label: I have considered the impact on all stakeholders
+          required: true
+        - label: I am prepared to participate in the extended discussion period (30+ days for governance)
+          required: true
